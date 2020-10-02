@@ -10,11 +10,11 @@ class GetRequester
  
   def initialize(url)
     @url = url
-    
   end
   
   # sends a GET request to the URL passed in on initialization
   # return the body of the response
+  
   def get_response_body
     uri = URI.parse(@url)
     response = Net::HTTP.get_response(uri)
